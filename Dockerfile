@@ -7,8 +7,7 @@ RUN apt-get update && \
 		DEBIAN_FRONTEND=noninteractive apt-get install -yq \
 		curl git unzip software-properties-common && \
         apt-add-repository -y ppa:rael-gc/rvm && \
-        apt-get update && \
-        apt-get install rvm && \
+        apt-get install -y rvm && \
         rm -rf /var/lib/apt/lists/*
 
 ADD run.sh /run.sh
