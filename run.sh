@@ -6,4 +6,4 @@ if [[ -f "/FIRST_RUN" ]] ; then
 	bundle install
 fi
 
-rails s -p 8080
+rails s -b 0.0.0.0 -p 8080
