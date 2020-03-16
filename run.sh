@@ -7,4 +7,5 @@ if [[ -f "/FIRST_RUN" ]] ; then
 fi
 
 rm -rf /app/tmp/pids/server.pid
+source .env
 rails s -b 0.0.0.0 -p 8080
