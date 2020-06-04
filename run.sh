@@ -5,7 +5,8 @@ if [[ -f "/FIRST_RUN" ]] ; then
 	gem install bundler:2.0.2
 fi
 
+bundle config --delete frozen
 rm -rf /app/tmp/pids/server.pid
-bundle install
 source .env
+bundle install
 rails s -b 0.0.0.0 -p 8080
