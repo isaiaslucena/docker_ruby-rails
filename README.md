@@ -1,1 +1,1 @@
-# Docker image with ruby on rails
+# Ruby on Rails docker image
